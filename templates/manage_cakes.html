@@ -1,0 +1,124 @@
+{% extends 'index.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	 <link rel="stylesheet" href="css/font.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	 <style>
+		ul li{}
+		ul li a {color:white;padding:40px; }
+		ul li a:hover {color:white;}
+	 </style>
+
+</head>
+<body>
+{% block content %}
+
+
+<br><br>
+<div class="middle" style=" padding:40px; border:1px solid #ED2553;  width:100%;">
+       <!--tab heading-->
+	   <ul class="nav nav-tabs nabbar_inverse" id="myTab" style="background:#ED2553;border-radius:10px 10px 10px 10px;" role="tablist">
+          <li class="nav-item">
+             <a class="nav-link active" id="home-tab" data-toggle="tab" href="#viewitem" role="tab" aria-controls="home" aria-selected="true">Manage Products</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#manageaccount" role="tab" aria-controls="profile" aria-selected="false">Add Products</a>
+          </li>
+
+       </ul>
+	   <br><br>
+	   <span style="color:green;"></span>
+	<!--tab 1 starts-->   
+	   <div class="tab-content" id="myTabContent">
+
+            <div class="tab-pane fade show active" id="viewitem" role="tabpanel" aria-labelledby="home-tab">
+                 <div class="container">
+                     <div class="table">
+			 <table  class="table-striped" border="1" bordercolor="#F0F0F0" cellpadding="10px">
+                 <tr class="text-white">
+
+			 <th>Sn</th>
+			 <th>Cake Image</th>
+			 <th>Cake name</th>
+			 <th>Cake Price</th>
+			 <th>Delete Item   </th>
+			 <th>Update item Details </th>
+             </tr>
+                 {% for cake in cake %}
+                 <tr class="text-white">
+                     <td>{{ forloop.counter }}</td>
+				<td><img src="{{ cake.image.url }}" height="100px" width="150px"></td>
+				<td align="center" style="width:150px;">{{ cake.name }}</td>
+				<td  align="center" style="width:150px;">{{cake.price}}</td>
+
+				<td align="center" style="width:150px;">
+
+				<a href="{% url 'DeleteCake' cake.id %}" class="btn btn-warning">Delete</a>
+
+				</td>
+				<td align="center" style="width:150px;">
+
+				<a href="{% url  'UpdateCakeDetails' cake.id %}"><button type="button" class="btn btn-danger">Update </button></a>
+
+				</td>
+                     {% endfor %}
+				</tr>
+
+			 </table>
+                         </div>
+			 </div>
+	        </div>
+<!--tab 1 ends-->
+
+
+			<!--tab 2 starts-->
+            <div class="tab-pane fade" id="manageaccount" role="tabpanel" aria-labelledby="profile-tab">
+			         <!--add Product-->
+                        <form action="{% url 'AddCake' %}" method="post" enctype="multipart/form-data">
+                            {% csrf_token %}
+                                     <div class="form-group"><!--cake_name-->
+                                     <label for="food_name">Cake Name:</label>
+                                            <input type="text" class="form-control" id="food_name" placeholder="Enter Cake Name" name="cake_name" required>
+                                     </div>
+
+
+                                     <div class="form-group"><!--cost-->
+                                            <label for="cost">Price:</label>
+                                            <input type="number" class="form-control" id="cost"   placeholder="price" name="cake_price" required>
+                                     </div>
+
+                                      <div class="form-group"><!--description-->
+                                            <label for="Description">Description:</label>
+                                            <input type="text" class="form-control" id="Description"   placeholder="Description" name="cake_description" required>
+                                     </div>
+
+
+	                                <div class="form-group"><!--image-->
+                                        <label for="cake_image">Cake_image:</label>
+                                         <input type="file"  id="cake_image" name="cake_image" required/>
+                                    </div>
+
+                                    <button type="submit" name="add" class="btn btn-primary">Add Cake</button>
+
+                               </form>
+
+			</div>
+			<!--tab 2 ends-->
+	  </div>
+	</div>
+	{% endblock %}
+</body>
+</html>

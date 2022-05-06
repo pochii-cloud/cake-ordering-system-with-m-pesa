@@ -1,0 +1,151 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="">
+  <head>
+     <title>Home</title>
+	 <!--bootstrap files-->
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	  <!--bootstrap files-->
+	 
+	 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	 <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Permanent+Marker" rel="stylesheet">
+
+  </head>
+
+  <body>
+  <style>
+body{
+     background-image:url("{% static 'image/main_spice2.jpg' %}");
+	 background-repeat: no-repeat;
+	 background-attachment: fixed;
+	  background-position: center;
+}
+ul li {list-style:none;}
+ul li a{color:black; font-weight:bold;}
+ul li a:hover{text-decoration:none;}
+
+
+</style>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  
+    <a class="navbar-brand" href="{%  url 'BaseView' %}"><span style="color:green;font-family: 'Permanent Marker', cursive;">Cake Hunt</span></a>
+
+	<a class="navbar-brand" style="color:black; text-decoration:none;"><i class="far fa-user"></i></a>
+
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+	
+      <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item">
+		     <a href="#" class="nav-link"><form method="post"><input type="text" name="search_text" id="search_text" placeholder="Search by Cake Name " class="form-control " /></form></a>
+		  </li>
+		  <li class="nav-item active">
+          <a class="nav-link" href="{% url 'BaseView' %}">Home
+                
+              </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'AboutUs' %}">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'ServicesView' %}">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'ContactUs' %}">Contact</a>
+        </li>
+		<li class="nav-item">
+
+			<a href="{% url 'MyCart' %}"><span style="color:red; font-size:30px;"><i class="fa fa-shopping-cart" aria-hidden="true"><span style="color:red;" id="cart"  class="badge badge-light">{{cart.cartproduct_set.count}}</span></i></span></a>
+			
+			&nbsp;&nbsp;&nbsp;
+			<a href="{% url 'RegisterView' %}" class="btn btn-outline-danger my-2 my-sm-0" type="submit">Sign Up</a>&nbsp;&nbsp;&nbsp;
+			<a href="{% url 'LogoutView' %}" class="btn btn-outline-success my-2 my-sm-0" type="submit">Log Out</a>&nbsp;&nbsp;&nbsp;
+
+        </li>
+		
+      </ul>
+	  
+    </div>
+	
+</nav>
+{% block content %}
+<!--menu ends-->
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'image/coffee_foam_beverage_cup_saucer_creative_continents_84944_1920x1080 (1).jpg' %}" alt="Los Angeles" class="d-block w-100">
+      <div class="carousel-caption">
+        <h3>Los Angeles</h3>
+        <p>We had such a great time in LA!</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'image/coffee_cup_saucer_grains_foam_73571_1920x1080.jpg' %}" alt="Chicago" class="d-block w-100">
+      <div class="carousel-caption">
+        <h3>Chicago</h3>
+        <p>Thank you, Chicago!</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'image/coffee_foam_beverage_cup_saucer_creative_continents_84944_1920x1080 (1).jpg' %}" alt="New York" class="d-block w-100">
+      <div class="carousel-caption">
+        <h3>New York</h3>
+        <p>We love the Big Apple!</p>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+
+
+<!--slider ends-->
+
+<!---cake cards start here-->
+    <div class="row">
+       {% for cake in cake %}
+             <div class="card col-md-6">
+    <img src="{{ cake.image.url }}"  height="250px" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h2 class="card-title"><b>{{ cake.name }}</b></h2>
+      <p class="card-text text-danger">Ksh{{ cake.price }}</p>
+         <a class="btn btn-danger" href="" type="button">details</a>
+         <a class="btn btn-danger" href="{% url 'AddToCartView' cake.id%}" type="button"><i class="fa-shopping-cart"></i></a>
+    </div>
+  </div>
+    {% endfor %}
+</div>
+
+
+<!---cake cards ends here-->
+
+<!--footer primary-->
+
+  {% endblock %}
+ {% include 'footer.html' %}
+
+
+
+
+	</body>
+
+</html>

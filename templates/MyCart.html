@@ -1,0 +1,70 @@
+{% extends 'index.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyCart</title>
+</head>
+
+<body>
+{% block content %}
+
+<div class="container" style="background:whitesmoke; margin-top: 100px">
+<div class="container">
+ <div class="row">
+   <div class="col-md-6" style="border-right: 2px solid gray">
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>SN</th>
+                <th>Product</th>
+                <th>Rate</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+            <tbody>
+              {% for cp in cart.cartproduct_set.all %}
+            <tr>
+               <td>{{ forloop.counter }}</td>
+               <td>{{ cp.cake.name }}</td>
+               <td>{{ cp.rate }}</td>
+               <td>{{ cp.quantity }}</td>
+               <td>{{ cp.subtotal }}</td>
+              <td>
+                  <a href="{% url 'ManageCart' cp.id %}?action=inc" class=" btn btn-primary">+</a>
+                  <a href="{% url 'ManageCart' cp.id %}?action=dcr" class=" btn btn-warning">-</a>
+                  <a href="{% url 'ManageCart' cp.id %}?action=rmv" class="btn btn-danger">x</a>
+              </td>
+            </tr>
+            {% endfor %}
+            <tr>
+                <th colspan="4" class="text-lg-end">Total:</th>
+                <th>Ksh{{ cart.total }}</th>
+            </tr>
+            </tbody>
+    </table>
+   </div>
+  <div class="col-md-6">
+        <h3 class="text-center"><strong>Checkout Form</strong></h3>
+      <div class="form-group">
+          <input  type="text" placeholder="username" class="form-control">
+      </div>
+       <div class="form-group">
+          <input  type="text" placeholder="Address" class="form-control">
+      </div>
+       <div class="form-group">
+          <input  type="number" placeholder="total_cost" class="form-control">
+      </div>
+      <button class="btn btn-primary">submit</button>
+  </div>
+  </div>
+</div>
+</div>
+ {% endblock %}
+</body>
+
+</html>

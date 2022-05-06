@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<body>
+<form method="post" action="{% url 'submit' %}">
+    {% csrf_token %}
+    <input type="number" placeholder="phone_number" name="phone_number">
+    <input type="number" placeholder="amount" name="amount">
+    <button type="submit">submit</button>
+</form>
+</body>
+</html>

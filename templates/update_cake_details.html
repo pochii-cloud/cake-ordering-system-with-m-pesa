@@ -1,0 +1,18 @@
+{% load static %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>update cake details</title>
+</head>
+<body>
+{% block content %}
+    <form method="post">
+    {% csrf_token %}
+     {{ form.as_p }}
+    <button class="btn btn-success" type="submit">update</button>
+    </form>
+{% endblock %}
+</body>
+</html>

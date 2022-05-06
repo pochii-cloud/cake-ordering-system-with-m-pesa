@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="296fc8dc-5f19-479c-95e0-97ddc915895b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="28NXHyrOwtrJdzmqsoMipvZiRLq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="D:/PycharmProjects/cake_ordering_system_Mpesa/templates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PycharmProjects\cake_ordering_system_Mpesa\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PycharmProjects\cake_ordering_system_Mpesa\static\image" />
+      <recent name="D:\PycharmProjects\cake_ordering_system_Mpesa\static" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="cake_ordering_system_Mpesa" type="Python.DjangoServer" factoryName="Django server">
+      <module name="cake_ordering_system_Mpesa" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="296fc8dc-5f19-479c-95e0-97ddc915895b" name="Default Changelist" comment="" />
+      <created>1651057933430</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1651057933430</updated>
+      <workItem from="1651058184572" duration="7740000" />
+      <workItem from="1651233781209" duration="8608000" />
+      <workItem from="1651242848725" duration="707000" />
+      <workItem from="1651388819889" duration="740000" />
+      <workItem from="1651395968962" duration="3828000" />
+      <workItem from="1651400004227" duration="2462000" />
+      <workItem from="1651484830615" duration="7229000" />
+      <workItem from="1651561537826" duration="1800000" />
+      <workItem from="1651564301437" duration="1695000" />
+      <workItem from="1651643640699" duration="3841000" />
+      <workItem from="1651656241977" duration="425000" />
+      <workItem from="1651657907247" duration="1727000" />
+      <workItem from="1651662261852" duration="452000" />
+      <workItem from="1651663025321" duration="15000" />
+      <workItem from="1651663955306" duration="4309000" />
+      <workItem from="1651669652138" duration="393000" />
+      <workItem from="1651676863952" duration="252000" />
+      <workItem from="1651677261766" duration="63000" />
+      <workItem from="1651677375366" duration="366000" />
+      <workItem from="1651677868427" duration="629000" />
+      <workItem from="1651737608103" duration="125000" />
+      <workItem from="1651737747709" duration="867000" />
+      <workItem from="1651819276872" duration="984000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
