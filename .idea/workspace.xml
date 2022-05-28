@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="296fc8dc-5f19-479c-95e0-97ddc915895b" name="Default Changelist" comment="" />
+    <list default="true" id="296fc8dc-5f19-479c-95e0-97ddc915895b" name="Default Changelist" comment="">
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/.idea/workspace.xml" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/cake_ordering_system_Mpesa/settings.py" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/cake_ordering_system_Mpesa/settings.py" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/cake_ordering_system_Mpesa/urls.py" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/cake_ordering_system_Mpesa/urls.py" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/cart/urls.py" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/cart/urls.py" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/cart/views.py" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/cart/views.py" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/core/forms.py" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/core/forms.py" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/db.sqlite3" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/db.sqlite3" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/MyCart.html" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/MyCart.html" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/index.html" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,10 +23,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="D:/PycharmProjects/cake_ordering_system_Mpesa" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -102,7 +115,22 @@
       <workItem from="1651677868427" duration="629000" />
       <workItem from="1651737608103" duration="125000" />
       <workItem from="1651737747709" duration="867000" />
-      <workItem from="1651819276872" duration="984000" />
+      <workItem from="1651819276872" duration="1880000" />
+      <workItem from="1651908629279" duration="39000" />
+      <workItem from="1651909858216" duration="19000" />
+      <workItem from="1651926608099" duration="149000" />
+      <workItem from="1652093473115" duration="365000" />
+      <workItem from="1652171232313" duration="19000" />
+      <workItem from="1652244635180" duration="198000" />
+      <workItem from="1652252790477" duration="15000" />
+      <workItem from="1652255911291" duration="16000" />
+      <workItem from="1652257779227" duration="22000" />
+      <workItem from="1652977932979" duration="4960000" />
+      <workItem from="1653031520865" duration="678000" />
+      <workItem from="1653206881771" duration="47000" />
+      <workItem from="1653207882632" duration="13000" />
+      <workItem from="1653641811395" duration="112000" />
+      <workItem from="1653711522498" duration="112000" />
     </task>
     <servers />
   </component>

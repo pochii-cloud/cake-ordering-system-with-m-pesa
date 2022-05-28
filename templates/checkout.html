@@ -4,18 +4,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MyCart</title>
+    <title>checkout </title>
 </head>
-
 <body>
 {% block content %}
-
-<div class="container" style="background:whitesmoke; margin-top: 100px">
 <div class="container">
- <div class="row">
-   <div class="col-md-8" style="border-right: 2px solid gray">
-
-    <table class="table">
+<div class="row">
+    <div class="col-md-6">
+        <table class="table">
         <thead>
             <tr>
                 <th>SN</th>
@@ -23,7 +19,6 @@
                 <th>Rate</th>
                 <th>Quantity</th>
                 <th>Subtotal</th>
-                <th>Action</th>
             </tr>
         </thead>
             <tbody>
@@ -34,11 +29,6 @@
                <td>{{ cp.rate }}</td>
                <td>{{ cp.quantity }}</td>
                <td>{{ cp.subtotal }}</td>
-              <td>
-                  <a href="{% url 'ManageCart' cp.id %}?action=inc" class=" btn btn-primary">+</a>
-                  <a href="{% url 'ManageCart' cp.id %}?action=dcr" class=" btn btn-warning">-</a>
-                  <a href="{% url 'ManageCart' cp.id %}?action=rmv" class="btn btn-danger">x</a>
-              </td>
             </tr>
             {% endfor %}
             <tr>
@@ -47,14 +37,29 @@
             </tr>
             </tbody>
     </table>
-   {% if cart.cartproduct_set.all %}
-   <a href="{% url 'CheckoutView' %}" class="btn btn-info">checkout</a>
-   {% endif %}
-   </div>
+    </div>
+       <div class="col-md-6">
+        <h3 class="text-center"><strong>Checkout Form</strong></h3>
+           <form method="post" action="">
+               {% csrf_token %}
+               {{ form.as_p }}
+                 <button class="btn btn-primary">submit</button>
+           </form>
+{#      <div class="form-group">#}
+{#          <input  type="text" placeholder="username" class="form-control">#}
+{#      </div>#}
+{#       <div class="form-group">#}
+{#          <input  type="text" placeholder="Address" class="form-control">#}
+{#      </div>#}
+{#       <div class="form-group">#}
+{#          <input  type="number" placeholder="total_cost" class="form-control">#}
+{#      </div>#}
 
+  </div>
 </div>
-</div>
- {% endblock %}
+
+  </div>
+
+{% endblock %}
 </body>
-
 </html>

@@ -2,10 +2,12 @@ from django.contrib import messages
 from django.shortcuts import render, redirect
 
 # Create your views here.
+from django.urls import reverse_lazy
 from django.views import View
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, CreateView
 
 from cart.models import CartProduct, Cart
+from core.forms import OrderForm
 from core.models import Cake
 
 
@@ -90,3 +92,31 @@ class ManageCart(View):
         else:
             pass
         return redirect('MyCart')
+
+
+class CheckoutView(CreateView):
+    template_name = 'checkout.html'
+    form_class = OrderForm
+    success_url = reverse_lazy('BaseView')
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        cart_id = self.request.session.get('cart_id', None)
+        if cart_id:
+            cart = Cart.objects.get(id=cart_id)
+        else:
+            cart = None
+        context['cart'] = cart
+        return context
+
+    def form_valid(self, form):
+        cart_id = self.request.session.get('cart_id', None)
+        if cart_id:
+            cart = Cart.objects.get(id=cart_id)
+            form.instance.cart = cart
+            form.instance.total = cart.total
+            form.instance.order_status = 'pending'
+            del self.request.session['cart_id']
+        else:
+            cart = None
+        return super().form_valid(form)
