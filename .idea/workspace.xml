@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="296fc8dc-5f19-479c-95e0-97ddc915895b" name="Default Changelist" comment="">
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/.idea/cake_ordering_system_Mpesa.iml" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/.idea/cake_ordering_system_Mpesa.iml" afterDir="false" />
       <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/.idea/workspace.xml" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/db.sqlite3" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/db.sqlite3" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/admin.html" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/admin.html" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/checkout.html" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/checkout.html" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/footer.html" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/footer.html" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/index.html" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/index.html" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/vendor-new.html" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/vendor-new.html" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/vendor_login.html" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/vendor_login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,6 +135,13 @@
       <workItem from="1653749245178" duration="117000" />
       <workItem from="1653933904785" duration="636000" />
       <workItem from="1653934651972" duration="8000" />
+      <workItem from="1653949580217" duration="2167000" />
+      <workItem from="1654072343412" duration="48000" />
+      <workItem from="1654084076364" duration="2204000" />
+      <workItem from="1654086910797" duration="682000" />
+      <workItem from="1654091341442" duration="238000" />
+      <workItem from="1654091923585" duration="109000" />
+      <workItem from="1654094493021" duration="3343000" />
     </task>
     <servers />
   </component>

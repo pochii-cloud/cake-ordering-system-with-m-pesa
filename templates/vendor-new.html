@@ -20,14 +20,12 @@
 </head>
 <body>
 {% block content %}
+    <div class="main mt-5 mb-5">
 <br><br><br>
-<div class="middle" style="margin:0px auto; border:1px solid #F8F9FA;  width:800px;">
+<div class="middle p-5" style="margin:0px auto; border:1px solid #000000;  width:800px;">
        <ul class="nav nav-tabs nabbar_inverse" id="myTab" style="background:#ED2553;border-radius:10px 10px 10px 10px;" role="tablist">
           <li class="nav-item">
              <a class="nav-link active" style="color:#BDDEFD;" id="register-tab" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="true">Register</a>
-          </li>
-		  <li class="nav-item">
-             <a class="nav-link " id="login-tab" style="color:#BDDEFD;" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">Log In</a>
           </li>
        </ul>
 	   <br><br>
@@ -55,45 +53,18 @@
                          <input type="password" class="form-control" id="pswd" placeholder="Confirm Password" name="pswd" required="required"{{ form.password2 }}
                      </div>
                      <button type="submit" id="register" name="register" class="btn btn-outline-primary">Register</button>
+                    <p class="mt-4">Already have an account?<a href="{% url 'LoginPageView' %}">click to login</a> </p>
 
                      
                 </form>
 				<br>
 			</div>
            <!---end of register tab --->
-           <!----LoginTab Starts Here ------>
-			<div class="tab-pane fade show" id="login" role="tabpanel" aria-labelledby="home-tab">
-                <div class="tab-content" id="myTabContent">
-	       <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="home-tab">
-			    <div class="footer" style="color:red;"></div>
-			    <form action="{% url 'LoginPageView' %}" method="post">
-                    {% csrf_token %}
-                      <div class="form-group">
-                          <label for="name">UserName:</label>
-                          <input type="text" class="form-control" id="name"  placeholder="Enter UserName" name="r_name" required="required"/>
-                      </div>
-	                 <div class="form-group">
-                         <label for="pswd">Password:</label>
-                         <input type="password" class="form-control" id="pswd" placeholder="Enter Password" name="pswd" required/>
-                     </div>
-
-                     <button type="submit" id="login" name="login" class="btn btn-outline-primary">Log In</button>
-
-                </form>
-				<br>
-			</div>
-			<div class="tab-pane fade show" id="login" role="tabpanel" aria-labelledby="home-tab">
-			   <a href=""><button type="button" style="padding:10px;  width:200px; margin-top:30%; margin-left:40%; margin:0px auto;" class="btn btn-outline-primary" name="login" value="Log In">Log In</button></a>
-			   <br><br><br> <br><br><br> <br><br><br><br><br><br> <br><br><br> <br><br><br>
-			</div>
-	   </div>
-
-			</div>
-           <!-----End of Login Tab---->
 	   </div>
 
 	</div>
 	<br>
+    </div>
 	 {% endblock %}
 	   
 </body>
