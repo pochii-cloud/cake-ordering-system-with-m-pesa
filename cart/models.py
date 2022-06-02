@@ -19,4 +19,4 @@ class CartProduct(models.Model):
     subtotal = models.PositiveIntegerField()
 
     def __str__(self):
-        return  "CartProducts" + str(self.id)
+        return "CartProducts" + str(self.id)

@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="296fc8dc-5f19-479c-95e0-97ddc915895b" name="Default Changelist" comment="">
-      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/.idea/cake_ordering_system_Mpesa.iml" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/.idea/cake_ordering_system_Mpesa.iml" afterDir="false" />
       <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/.idea/workspace.xml" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/cart/models.py" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/cart/models.py" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/cart/views.py" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/cart/views.py" afterDir="false" />
       <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/db.sqlite3" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/db.sqlite3" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/orders/models.py" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/orders/models.py" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/orders/urls.py" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/orders/urls.py" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/orders/views.py" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/orders/views.py" afterDir="false" />
       <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/admin.html" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/admin.html" afterDir="false" />
       <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/checkout.html" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/checkout.html" afterDir="false" />
-      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/footer.html" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/footer.html" afterDir="false" />
       <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/index.html" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/index.html" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/rest_framework/api.html" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/rest_framework/api.html" afterDir="false" />
       <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/vendor-new.html" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/vendor-new.html" afterDir="false" />
       <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/vendor_login.html" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/vendor_login.html" afterDir="false" />
     </list>
@@ -23,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -141,7 +145,13 @@
       <workItem from="1654086910797" duration="682000" />
       <workItem from="1654091341442" duration="238000" />
       <workItem from="1654091923585" duration="109000" />
-      <workItem from="1654094493021" duration="3343000" />
+      <workItem from="1654094493021" duration="11337000" />
+      <workItem from="1654113852797" duration="1000" />
+      <workItem from="1654113888345" duration="74000" />
+      <workItem from="1654118426799" duration="3127000" />
+      <workItem from="1654145494203" duration="3337000" />
+      <workItem from="1654150980653" duration="17000" />
+      <workItem from="1654155358881" duration="165000" />
     </task>
     <servers />
   </component>

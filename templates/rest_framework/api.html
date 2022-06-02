@@ -1,3 +1,5 @@
+{% extends 'index.html' %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,11 +7,21 @@
     <title>test</title>
 </head>
 <body>
-<form method="post" action="{% url 'submit' %}">
+{% block content %}
+<div class="main" style="margin-top: 100px;">
+<div class="container">
+<form class="form-group" method="post" action="{% url 'submit' %}">
     {% csrf_token %}
-    <input type="number" placeholder="phone_number" name="phone_number">
-    <input type="number" placeholder="amount" name="amount">
-    <button type="submit">submit</button>
+    <label>
+        <input type="number" class="form-control" placeholder="+254" name="phone_number">
+    </label>
+        <label>
+        <input type="number" class="form-control" placeholder="amount" name="amount">
+    </label>
+    <button class="btn btn-primary" type="submit">submit</button>
 </form>
+</div>
+    </div>
+{% endblock %}
 </body>
 </html>

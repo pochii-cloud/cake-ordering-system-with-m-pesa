@@ -53,6 +53,9 @@ ul li a:hover{text-decoration:none;}
         <li class="nav-item">
           <a class="nav-link" href="{% url 'ServicesView' %}">Services</a>
         </li>
+            <li class="nav-item">
+          <a class="nav-link" href="{% url 'MyOrders' %}">MyOrders</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="{% url 'ContactUs' %}">Contact</a>
         </li>
@@ -163,10 +166,20 @@ ul li a:hover{text-decoration:none;}
         <p class="card-text">{{ cake.description }}</p>
       </div>
         <hr>
-        <div class="row m-1">
-            <div class="container">
-                <a class="btn btn-danger ml-5 ">Details</a>
-                <a class="" href="{% url 'AddToCartView'  cake.id %}"><i class="fa fa-shopping-cart" style=""></i></a>
+        <style>
+            .Icon{
+                color: red;
+            }
+            .Icon:hover{
+                color: red;
+                font-size: 28px;
+            }
+        </style>
+        <div class="row" style="display: block;">
+            <div class="Icons" style="display:flex;align-items: center;justify-content: space-evenly;font-size: 25px;">
+                <a class="Icon" href=""><i class="fa fa-info-circle" value="Details"></i> </a>
+                <a class="Icon" href="{% url 'AddToCartView'  cake.id %}"><i class="fa fa-shopping-cart"></i></a>
+                <a class="Icon" href=""><i class="fa fa-star"></i></a>
             </div>
 
             </div>

@@ -1,0 +1,50 @@
+{% extends 'index.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyOrders</title>
+</head>
+<body>
+{% block content %}
+ <main id="main" style="margin-top: 100px;margin-bottom: 100px;">
+    <section class="">
+        <div class="container">
+             {% for orders in orders %}
+     <div class="card text-center mt-5 ">
+  <div class="card-header">
+      <h4 class="card-title">Ordered by:{{ orders.ordered_by  }}</h4>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <h5 class="card-title">Shipping Address:{{ orders.shipping_address  }}</h5>
+    <h5 class="card-title">Mobile:{{ orders.mobile  }}</h5>
+    <h5 class="card-title">total:{{ orders.cart.total }}</h5>
+      <a class="btn btn-success" href="{% url 'submit' %}">Pay with M-pesa</a>
+  </div>
+  <div class="card-footer text-muted">
+  </div>
+</div>
+                 {% empty %}
+
+                 <div class="card text-center mt-5 ">
+  <div class="card-header">
+      <h4 class="card-title"></h4>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <h5 class="card-title font-weight-bold text-danger">Nothing in Your Orders</h5>
+      <a class="btn btn-success" href="{% url 'BaseView' %}">Make an Order</a>
+  </div>
+  <div class="card-footer text-muted">
+  </div>
+</div>
+
+            {% endfor %}
+     </div>
+    </section>
+    </main>
+{% endblock %}
+</body>
+</html>

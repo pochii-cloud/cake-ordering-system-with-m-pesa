@@ -9,6 +9,7 @@ from django.views.generic import TemplateView, CreateView
 from cart.models import CartProduct, Cart
 from core.forms import OrderForm
 from core.models import Cake
+from orders.models import Order
 
 
 class MyCart(TemplateView):
@@ -61,8 +62,8 @@ class AddToCartView(View):
             cart_obj.total += cake_obj.price
             cart_obj.save()
             messages.info(request, 'Item added into cart successfully')
-            # return redirect("/")
-        return render(request, 'MyCart.html', {'cart_obj': cart_obj})
+            return render(request, 'MyCart.html', {'cart_obj': cart_obj})
+        return redirect('MyCart')
 
 
 class ManageCart(View):
@@ -97,7 +98,7 @@ class ManageCart(View):
 class CheckoutView(CreateView):
     template_name = 'checkout.html'
     form_class = OrderForm
-    success_url = reverse_lazy('BaseView')
+    success_url = reverse_lazy('Myorders')
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -114,6 +115,7 @@ class CheckoutView(CreateView):
         if cart_id:
             cart = Cart.objects.get(id=cart_id)
             form.instance.cart = cart
+            form.instance.user = self.request.user
             form.instance.total = cart.total
             form.instance.order_status = 'pending'
             del self.request.session['cart_id']
