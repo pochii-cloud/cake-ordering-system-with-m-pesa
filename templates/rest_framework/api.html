@@ -10,16 +10,7 @@
 {% block content %}
 <div class="main" style="margin-top: 100px;">
 <div class="container">
-<form class="form-group" method="post" action="{% url 'submit' %}">
-    {% csrf_token %}
-    <label>
-        <input type="number" class="form-control" placeholder="+254" name="phone_number">
-    </label>
-        <label>
-        <input type="number" class="form-control" placeholder="amount" name="amount">
-    </label>
-    <button class="btn btn-primary" type="submit">submit</button>
-</form>
+<p>welcome to daraja apis</p>
 </div>
     </div>
 {% endblock %}
