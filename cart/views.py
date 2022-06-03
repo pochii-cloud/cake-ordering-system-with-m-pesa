@@ -1,4 +1,5 @@
 from django.contrib import messages
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, redirect
 
 # Create your views here.
@@ -95,10 +96,11 @@ class ManageCart(View):
         return redirect('MyCart')
 
 
-class CheckoutView(CreateView):
+class CheckoutView(CreateView, LoginRequiredMixin):
     template_name = 'checkout.html'
     form_class = OrderForm
-    success_url = reverse_lazy('Myorders')
+    success_url = reverse_lazy('MyOrders')
+    login_url = '/accounts/LoginPageView/'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -116,6 +118,9 @@ class CheckoutView(CreateView):
             cart = Cart.objects.get(id=cart_id)
             form.instance.cart = cart
             form.instance.user = self.request.user
+            number = form.cleaned_data.get('mobile')
+            mobile = number.replace("0", "254", 1)
+            form.instance.mobile = mobile
             form.instance.total = cart.total
             form.instance.order_status = 'pending'
             del self.request.session['cart_id']

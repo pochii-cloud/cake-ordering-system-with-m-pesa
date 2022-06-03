@@ -47,8 +47,8 @@
             <div class="tab-pane fade show active" id="viewitem" role="tabpanel" aria-labelledby="home-tab">
                  <div class="container">
                      <div class="table">
-			 <table  class="table-striped" border="1" bordercolor="#F0F0F0" cellpadding="10px">
-                 <tr class="text-white">
+			 <table  class="table" border="1" bordercolor="#F0F0F0" cellpadding="10px">
+                 <tr class="text-white bg-dark">
 
 			 <th>Sn</th>
 			 <th>Cake Image</th>
@@ -58,9 +58,9 @@
 			 <th>Update item Details </th>
              </tr>
                  {% for cake in cake %}
-                 <tr class="text-white">
+                 <tr>
                      <td>{{ forloop.counter }}</td>
-				<td><img src="{{ cake.image.url }}" height="100px" width="150px"></td>
+				<td><img class="m-2" src="{{ cake.image.url }}" height="100px" width="150px"></td>
 				<td align="center" style="width:150px;">{{ cake.name }}</td>
 				<td  align="center" style="width:150px;">{{cake.price}}</td>
 
