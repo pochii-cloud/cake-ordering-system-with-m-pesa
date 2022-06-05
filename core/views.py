@@ -1,3 +1,4 @@
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.views import LoginView
 from django.http import HttpResponse
 from django.shortcuts import render
@@ -48,17 +49,14 @@ class Footer(TemplateView):
     template_name = 'footer.html'
 
 
-class AdminLoginView(LoginView):
-    template_name = 'admin.html'
-
-
-class ManageCakes(TemplateView):
-    template_name = 'manage_cakes.html'
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['cake'] = Cake.objects.all()
-        return context
+class ManageCakes(View):
+    def get(self, request):
+        if not request.user.is_superuser:
+            return HttpResponse('Only admins can access this page')
+        else:
+            cake = Cake.objects.all()
+            context = {'cake': cake}
+            return render(request, 'manage_cakes.html', context)
 
 
 class AddCake(View):

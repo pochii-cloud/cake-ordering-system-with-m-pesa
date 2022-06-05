@@ -10,7 +10,7 @@ from orders.models import Order
 
 
 class MyOrders(LoginRequiredMixin, View):
-    login_url = '/accounts/LoginPageView/'
+    login_url = '/accounts/login/'
 
     def get(self, request):
         orders = Order.objects.all().filter(user=request.user)

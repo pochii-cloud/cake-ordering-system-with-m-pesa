@@ -1,5 +1,6 @@
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.mixins import UserPassesTestMixin
 from django.contrib.auth.views import LoginView
 from django.shortcuts import render, redirect
 
@@ -28,4 +29,15 @@ class LoginPageView(LoginView):
 class LogoutView(View):
     def get(self, request, *args, **kwargs):
         logout(request)
-        return redirect('LoginPageView')
+        return redirect('login')
+
+
+class AdminLoginView(UserPassesTestMixin, View):
+    def test_func(self):
+        return self.request.user.is_superuser
+
+    def get(self, request):
+        return redirect('ManageCakes')
+
+    def post(self, request):
+        return redirect('ManageCakes')
