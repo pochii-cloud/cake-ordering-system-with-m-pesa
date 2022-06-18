@@ -42,7 +42,7 @@
                     <input type="password" name="password1" class="form-control mt-3" placeholder="password"{{ form.password1 }}
                     <input type="password" name="password2" class="form-control mt-3" placeholder="confirm password"{{ form.password2 }}
                     <button class="btn btn-info mt-2" type="submit">submit</button>
-                   <p class="mt-4">Already have an account?<a href="{% url 'LoginPageView' %}">click to login</a> </p>
+                   <p class="mt-4">Already have an account?<a href="{% url 'login' %}">click to login</a> </p>
                     </form>
                         <div class="alert-danger">{{ form.errors }}</div>
 			</div>

@@ -100,7 +100,7 @@ class CheckoutView(CreateView, LoginRequiredMixin):
     template_name = 'checkout.html'
     form_class = OrderForm
     success_url = reverse_lazy('MyOrders')
-    login_url = '/accounts/LoginPageView/'
+    login_url = '/accounts/login/'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)

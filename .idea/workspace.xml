@@ -3,14 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="296fc8dc-5f19-479c-95e0-97ddc915895b" name="Default Changelist" comment="">
       <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/.idea/workspace.xml" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/accounts/urls.py" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/accounts/urls.py" afterDir="false" />
       <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/accounts/views.py" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/accounts/views.py" afterDir="false" />
-      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/core/urls.py" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/core/urls.py" afterDir="false" />
-      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/core/views.py" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/core/views.py" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/cake_ordering_system_Mpesa/settings.py" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/cake_ordering_system_Mpesa/settings.py" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/cart/views.py" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/cart/views.py" afterDir="false" />
       <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/db.sqlite3" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/db.sqlite3" afterDir="false" />
-      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/orders/views.py" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/orders/views.py" afterDir="false" />
-      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/checkout.html" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/checkout.html" afterDir="false" />
-      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/footer.html" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/footer.html" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/vendor-new.html" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/vendor-new.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,6 +156,22 @@
       <workItem from="1654344434938" duration="18000" />
       <workItem from="1654405334613" duration="70000" />
       <workItem from="1654407348513" duration="32000" />
+      <workItem from="1654412224060" duration="92000" />
+      <workItem from="1654415202456" duration="1082000" />
+      <workItem from="1654419216333" duration="55000" />
+      <workItem from="1654421538273" duration="306000" />
+      <workItem from="1654422044079" duration="481000" />
+      <workItem from="1654427632516" duration="18000" />
+      <workItem from="1654691660554" duration="45000" />
+      <workItem from="1654691929626" duration="14000" />
+      <workItem from="1654692937575" duration="107000" />
+      <workItem from="1654693707768" duration="33000" />
+      <workItem from="1654693762169" duration="8000" />
+      <workItem from="1654945802143" duration="359000" />
+      <workItem from="1654950685787" duration="18000" />
+      <workItem from="1654951150653" duration="576000" />
+      <workItem from="1654954156274" duration="10000" />
+      <workItem from="1654954685553" duration="640000" />
     </task>
     <servers />
   </component>

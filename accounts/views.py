@@ -15,7 +15,7 @@ from core.forms import RegisterForm
 class RegisterView(FormView):
     form_class = RegisterForm
     template_name = 'vendor-new.html'
-    success_url = reverse_lazy('LoginPageView')
+    success_url = reverse_lazy('login')
 
     def form_valid(self, form):
         form.save()

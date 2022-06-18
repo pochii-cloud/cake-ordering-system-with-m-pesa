@@ -52,14 +52,15 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 MPESA_CONFIG = {
-    'CONSUMER_KEY': 'PJU0iI8IyGxjkCLQi9Gic8MnlCpH2xem',
-    'CONSUMER_SECRET': 'DVzGh8D3myKaGWKm',
+    'CONSUMER_KEY': 'AUfqJWrHpavFgKPBd15Zbd0DPt0ANUF6',
+    'CONSUMER_SECRET': '5pqIjQKDEG6X5jYD',
     'CERTIFICATE_FILE': None,
     'HOST_NAME': "https://sandbox.safaricom.co.ke",
     'PASS_KEY': 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919',
     'SAFARICOM_API': 'https://sandbox.safaricom.co.ke',
     'SHORT_CODE': '174379',
     'TRANSACTION_TYPE': 'CustomerBuyGoodsOnline',
+    'Access_Token': 'PCPgFvSOG0B2gCBs3kMv74MoNWaS',
 }
 
 ROOT_URLCONF = 'cake_ordering_system_Mpesa.urls'
