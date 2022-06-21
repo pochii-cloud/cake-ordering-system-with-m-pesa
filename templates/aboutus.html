@@ -43,11 +43,8 @@ ul li {list-style:none;}
 	<body>
 	<!--navbar start-->
 {% block content %}
-<div id="result" style="position:fixed;top:100; right:50;z-index: 3000;width:350px;background:white;"></div>
-
-<br><br>
-<div class="container-fluid">
-  <img src="{% static 'image/about.bmp' %}" width='100%'/>
+<div class="container-fluid m-3">
+  <img  class=""  src="{% static 'image/about.bmp' %}" width='100%' alt=""/>
 </div>
 <br><br>
 <div class="container-fluid" style="background:black; opacity:0.30;">
@@ -61,13 +58,6 @@ ul li {list-style:none;}
 <h3 style="color:white; text-align:center; text-transform:uppercase;">Enabling restaurants to create amazing experiences.</h3>
 <p style="color:white; text-align:center; font-size:25px;">With dedicated engagement and management tools, we're enabling restaurants to spend more time focusing on food itself, which translates directly to better dining experiences.</p>
 </div>
-
-<br><br>
-<div class="container-fluid" style="background:white; text-transform:uppercase;padding:20px; border-left:10px solid black;"><h3>locate us</h3></div>
-<div class="container-fluid">
-<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="304" id="gmap_canvas" src="https://maps.google.com/maps?q=hotel%20limontree&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.emojilib.com">emojilib.com</a></div><style>.mapouter{position:relative;text-align:right;height:304px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:304px;width:100%;}</style></div>
-</div>
-<br><br>
  {% endblock %}
 	</body>
 </html>

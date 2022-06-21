@@ -1,0 +1,23 @@
+{% extends 'index.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>delete file</title>
+</head>
+<body>
+{% block content %}
+    <div class="main" style="margin-top: 120px;">
+        <div class="container">
+            <form method="post" class="form-group">
+                {% csrf_token %}
+                <p>Are you sure you want to delete {{ object }}?</p>
+                <input class="btn btn-success" type="submit" value="Confirm">
+            </form>
+        </div>
+    </div>
+
+{% endblock %}
+</body>
+</html>

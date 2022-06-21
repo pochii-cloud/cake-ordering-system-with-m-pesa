@@ -1,4 +1,4 @@
-{% load static %}
+{% extends 'index.html' %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -8,11 +8,22 @@
 </head>
 <body>
 {% block content %}
-    <form method="post">
-    {% csrf_token %}
-     {{ form.as_p }}
-    <button class="btn btn-success" type="submit">update</button>
-    </form>
+    <div class="main" style="margin-top: 120px;margin-bottom: 50px;">
+        <div class="container">
+            <div class="formdiv" style="display: flex;align-items: center;justify-content: center;">
+                <form class="updateform" method="post" style="display: grid;">
+                    {% csrf_token %}
+                    {% for field in form %}
+                        <label>{{ field.label_tag }}</label>
+                        {{ field }}
+                    {% endfor %}
+                    <button class="btn btn-success mt-2" type="submit">update</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
 {% endblock %}
 </body>
 </html>

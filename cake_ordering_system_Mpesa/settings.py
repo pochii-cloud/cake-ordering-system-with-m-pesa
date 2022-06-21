@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'core.apps.CoreConfig',
     'accounts',
     'cart',
-    'mpesa',
     'orders',
+    'mpesa_api',
 ]
 
 MIDDLEWARE = [

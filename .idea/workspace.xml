@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="296fc8dc-5f19-479c-95e0-97ddc915895b" name="Default Changelist" comment="">
+      <change afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/mpesa_api/mpesa_credentials.py" afterDir="false" />
+      <change afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/mpesa_api/urls.py" afterDir="false" />
       <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/.idea/workspace.xml" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/accounts/views.py" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/accounts/views.py" afterDir="false" />
       <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/cake_ordering_system_Mpesa/settings.py" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/cake_ordering_system_Mpesa/settings.py" afterDir="false" />
-      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/cart/views.py" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/cart/views.py" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/cake_ordering_system_Mpesa/urls.py" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/cake_ordering_system_Mpesa/urls.py" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/core/views.py" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/core/views.py" afterDir="false" />
       <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/db.sqlite3" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/db.sqlite3" afterDir="false" />
-      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/vendor-new.html" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/vendor-new.html" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/orders/urls.py" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/orders/urls.py" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/orders/views.py" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/orders/views.py" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/aboutus.html" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/aboutus.html" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/deletecake.html" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/delete.html" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/footer.html" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/footer.html" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/index.html" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/index.html" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/my_orders.html" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/my_orders.html" afterDir="false" />
+      <change beforePath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/update_cake_details.html" beforeDir="false" afterPath="D:/PycharmProjects/cake_ordering_system_Mpesa/templates/update_cake_details.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -172,6 +181,13 @@
       <workItem from="1654951150653" duration="576000" />
       <workItem from="1654954156274" duration="10000" />
       <workItem from="1654954685553" duration="640000" />
+      <workItem from="1655565113077" duration="292000" />
+      <workItem from="1655619533886" duration="651000" />
+      <workItem from="1655644043233" duration="2281000" />
+      <workItem from="1655647084714" duration="47000" />
+      <workItem from="1655702216908" duration="462000" />
+      <workItem from="1655758138119" duration="581000" />
+      <workItem from="1655794494765" duration="3316000" />
     </task>
     <servers />
   </component>

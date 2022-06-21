@@ -78,7 +78,7 @@ class AddCake(View):
 
 
 class DeleteCake(DeleteView):
-    template_name = 'deletecake.html'
+    template_name = 'delete.html'
     model = Cake
     success_url = '/'
 
